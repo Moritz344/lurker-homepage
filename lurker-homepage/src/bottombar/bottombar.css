@@ -1,0 +1,16 @@
+
+.container{
+  position: absolute;
+  padding: 20px;
+  background-color: #1E1E1E;
+
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.layout{
+  display: grid;
+  grid-template-columns: repeat(3,780px);
+  overflow-x: hidden;
+}
