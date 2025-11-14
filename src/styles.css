@@ -5,9 +5,14 @@
 }
 
 body{
+  background-color: var(--hero-bg-color);
   font-family: Arial;
 }
 
+a{
+  color: white;
+  text-decoration: none;
+}
 
 h1{
   font-size: 100px;

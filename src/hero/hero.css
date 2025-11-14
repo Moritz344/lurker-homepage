@@ -7,6 +7,42 @@
   background-color: var(--hero-bg-color);
 }
 
+.downloads{
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  text-align: center;
+  background-color: #252424;
+}
+
+.linux{
+  background-color: var(--hero-bg-color);
+  border-radius: 10px;
+  height: 100px;
+  width: 200px;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+.linux img{
+  float: left;
+}
+
+.linux h2{
+  display: flex;
+  margin-top: 40px;
+  color: white;
+  font-size: 20px;
+
+}
+
+.linux:hover{
+  transform: scale(1.02);
+}
+
 section{
   background-color: var(--hero-bg-color);
 
@@ -28,7 +64,7 @@ section{
 
 .feature-grid{
   display:grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(2,1fr);
   gap: 10px;
 }
 
@@ -38,6 +74,13 @@ section{
   justify-items: center;
   margin-top: 200px;
 }
+
+.preview{
+  display: flex;
+  justify-content: right;
+
+}
+
 .hero-text h1{
   margin-bottom: 0px;
 }

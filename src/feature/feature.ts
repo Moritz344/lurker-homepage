@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-feature',
@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './feature.css',
 })
 export class Feature {
+  @Input() name: string = "";
+  @Input() description: string = "";
+
+  constructor() {}
 
 }

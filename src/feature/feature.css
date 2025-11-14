@@ -1,8 +1,9 @@
 .container{
-  background-color: black;
+  background-color: #444444;
   padding: 10px;
   width: 400px;
   height: 200px;
+  border-radius: 10px;
 }
 
 .layout{

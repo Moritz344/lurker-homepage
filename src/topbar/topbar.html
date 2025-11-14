@@ -1,7 +1,10 @@
 <div class="container">
-  <button class="home">Home</button>
   <div class="options">
-    <button><a>Changelog</a></button>
-    <button><a>Contact</a></button>
+    <button class="home" (click)="navigate('')"> <a>Home</a></button>
+    @for(btn of buttons; track $index) {
+    <button>
+      <a (click)="navigate(btn.route)"> {{ btn.name }}</a>
+    </button>
+    }
   </div>
 </div>
