@@ -1,5 +1,5 @@
 <app-topbar></app-topbar>
-<div class="container">
+<div class="container" #home id="home">
   <div class="hero-text">
     <h1 >Lurker</h1>
     <span style="color: #D9D9D9;width: 400px;text-align:left">opensource chat client  for twitch.tv</span>
@@ -22,40 +22,25 @@
     <h1>Features</h1>
     <div class="feature-grid" #features>
       <div class="features-box">
-        <h1>Emotes</h1>
-        @for (feature of listOfFeatures.emotes; track $index) {
-          <span>{{ feature }}</span>
-        }
+        <h1 style="text-align: center">Chat</h1>
+          <span>
+          View chat messages. Display badges and emotes. See user colors for chatters. Click on any username to open their user profile card
+          </span>
       </div>
       <div class="features-box">
-        <h1>Chat</h1>
-        @for (feature of listOfFeatures.chat; track $index) {
-          <span >{{ feature }}</span> <br>
-        }
+        <h1 style="text-align: center">User Information</h1>
+        <span>
+         User cards showing profile information
+         Channel switching to navigate between different streams
+        </span>
       </div>
       <div class="features-box">
-        <h1>Emotes</h1>
-        @for (feature of listOfFeatures.emotes; track $index) {
-          <span>{{ feature }}</span>
-        }
-      </div>
-      <div class="features-box">
-        <h1>Emotes</h1>
-        @for (feature of listOfFeatures.emotes; track $index) {
-          <span>{{ feature }}</span>
-        }
-      </div>
-      <div class="features-box">
-        <h1>Emotes</h1>
-        @for (feature of listOfFeatures.emotes; track $index) {
-          <span>{{ feature }}</span>
-        }
-      </div>
-      <div class="features-box">
-        <h1>Emotes</h1>
-        @for (feature of listOfFeatures.emotes; track $index) {
-          <span>{{ feature }}</span>
-        }
+        <h1 style="text-align: center">Stream Information</h1>
+        <span>
+          Live stream thumbnails
+          Current viewer count
+          Stream titles
+        </span> <br>
       </div>
     </div>
   </section>

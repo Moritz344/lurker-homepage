@@ -10,8 +10,10 @@ body{
 
 .container{
   background-color: var(--topbar-bg-color);
-  position: absolute;
+  position: fixed;
+  z-index: 1000;
   left:0px;
+  backdrop-filter: blur(3px);
   right:0px;
   top: 0px;
   height: 50px;
@@ -25,6 +27,7 @@ body{
   justify-content: center;
   color: white;
   margin-top: 10px;
+  gap: 20px;
 
 }
 

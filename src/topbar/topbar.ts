@@ -16,7 +16,12 @@ export class Topbar {
 
 
   navigate(route: string) {
-    this.router.navigate([route]);
+    if (route == "") {
+      this.router.navigate([route]);
+      this.scrollToElement('home');
+    } else {
+      this.router.navigate([route]);
+    }
   }
 
   scrollToElement(elementId: string) {

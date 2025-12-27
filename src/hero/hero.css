@@ -1,6 +1,6 @@
 .container{
   position: absolute;
-  top: 70px;
+  top: 40px;
   left:0px;
   right:0px;
   bottom: 0px;
@@ -34,6 +34,11 @@
   float: right;
   margin-right: 200px;
   margin-top: -450px;
+  transition: 0.3s ease;
+}
+
+.lurker-chat:hover{
+  transform: scale(1.01);
 }
 
 .linux img{
@@ -64,17 +69,28 @@ section{
   justify-content: center;
   align-items: center;
   color: #333;
-  text-align: center;
   margin-top: 300px;
+  text-align: center;
 }
 
 .features-box{
   background-color: var(--grey-color);
   padding: 10px;
-  width: 350px;
-  height: 200px;
+  width: 360px;
+  height: 300px;
   border-radius: 10px;
+  transition: 0.3s ease;
 }
+
+.features-box:hover{
+  transform: scale(1.02) ;
+}
+
+.features-box span{
+  color: rgba(163,163,163);
+  font-size: 25px;
+}
+
 .features-box h1{
   font-size: 30px;
 }
@@ -94,7 +110,7 @@ h2{
 .feature-grid{
   display:grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 10px;
+  gap: 40px;
 }
 
 
