@@ -1,27 +1,73 @@
 <app-topbar></app-topbar>
 <div class="container">
   <div class="hero-text">
-    <h1>Lurker</h1>
-    <span>opensource chat client for twitch.tv</span>
+    <h1 >Lurker</h1>
+    <span style="color: #D9D9D9;width: 400px;text-align:left">opensource chat client  for twitch.tv</span>
+    <br>
+    <a target="_blank" href="https://github.com/Moritz344/lurker/releases">
+    <div class="linux" #downloads>
+      <img width="50" height="50" src="linux.png">
+      <h2>Download for Linux</h2>
+    </div>
+    </a>
   </div>
 
-  <section class="features">
+  <div class="lurker-chat">
+    <img src="chat.png">
+  </div>
+
+
+
+  <section class="features" id="features" >
     <h1>Features</h1>
-    <div class="feature-grid">
-      <app-feature name="Emotes" description="See and use Twitch Chat Emotes"></app-feature>
-      <app-feature name="Chat" description="Read and write Chat Messages"></app-feature>
-      <app-feature name="Customization" description="Customize your twitch chat"></app-feature>
-      <app-feature name="Tabs" description="Have different Tabs open with different chats."></app-feature>
+    <div class="feature-grid" #features>
+      <div class="features-box">
+        <h1>Emotes</h1>
+        @for (feature of listOfFeatures.emotes; track $index) {
+          <span>{{ feature }}</span>
+        }
+      </div>
+      <div class="features-box">
+        <h1>Chat</h1>
+        @for (feature of listOfFeatures.chat; track $index) {
+          <span >{{ feature }}</span> <br>
+        }
+      </div>
+      <div class="features-box">
+        <h1>Emotes</h1>
+        @for (feature of listOfFeatures.emotes; track $index) {
+          <span>{{ feature }}</span>
+        }
+      </div>
+      <div class="features-box">
+        <h1>Emotes</h1>
+        @for (feature of listOfFeatures.emotes; track $index) {
+          <span>{{ feature }}</span>
+        }
+      </div>
+      <div class="features-box">
+        <h1>Emotes</h1>
+        @for (feature of listOfFeatures.emotes; track $index) {
+          <span>{{ feature }}</span>
+        }
+      </div>
+      <div class="features-box">
+        <h1>Emotes</h1>
+        @for (feature of listOfFeatures.emotes; track $index) {
+          <span>{{ feature }}</span>
+        }
+      </div>
     </div>
   </section>
 
-  <section class="downloads">
+  <section class="downloads" id="downloads" >
     <h1>Downloads</h1>
-    <div class="linux">
-      <img src="linux.png">
-      <h2>Linux</h2>
+    <a target="_blank" href="https://github.com/Moritz344/lurker/releases">
+    <div class="linux" #downloads>
+      <img width="50" height="50" src="linux.png">
+      <h2>Download for Linux</h2>
     </div>
+    </a>
   </section>
 
 </div>
-

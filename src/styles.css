@@ -1,11 +1,13 @@
 :root {
-  --topbar-bg-color: #1E1E1E;
-  --hero-bg-color: #2C2C2C;
+  --bg-color: rgba(23,23,23);
+  --grey-color: #262626;
+  --blue-color: #3B82F6;
+  --hover-color: rgba(163,163,163);
 
 }
 
 body{
-  background-color: var(--hero-bg-color);
+  background-color: var(--bg-color);
   font-family: Arial;
 }
 

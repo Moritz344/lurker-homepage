@@ -4,8 +4,7 @@ import { Changelog } from '../changelog/changelog';
 
 export const routes: Routes = [
 
-  { path: "",component: Hero },
-  { path: "changelog",component: Changelog},
-  { path: "contact",component: Changelog}
+  { path: "", component: Hero },
+  { path: "changelogs", component: Changelog },
 
 ];

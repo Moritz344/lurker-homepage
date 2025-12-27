@@ -1,0 +1,14 @@
+.box{
+  margin: 50px;
+  background-color: var(--topbar-bg-color);
+  padding: 10px;
+}
+
+.box img{
+  float: left;
+  margin-right: 10px;
+}
+
+.committer-name:hover{
+  color: lightblue;
+}

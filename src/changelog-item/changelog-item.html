@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="box">
+    <img style="border-radius: 100%" width="100" height="100" [src]="data.committer.avatar_url">  <br>
+    <a  [href]="data.committer.html_url" target="_blank"><span class="committer-name">{{ data.commit.author.name }} </span> </a> <br>
+    <br>
+    <span>{{ data.commit.message }}</span> <br>
+    <br>
+    <a style="color: lightblue" [href]="data.html_url" target="_blank">{{ data.sha }}</a>
+  </div>
+</div>

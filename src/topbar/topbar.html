@@ -1,10 +1,19 @@
 <div class="container">
   <div class="options">
-    <button class="home" (click)="navigate('')"> <a>Home</a></button>
-    @for(btn of buttons; track $index) {
-    <button>
-      <a (click)="navigate(btn.route)"> {{ btn.name }}</a>
+    <button class="home" (click)="navigate('')"> <a>Home</a> </button>
+    <button (click)="scrollToElement('features')">
+      <a> Features </a>
     </button>
-    }
+    <button (click)="scrollToElement('downloads')">
+      <a> Downloads </a>
+    </button>
+    <button>
+      <a (click)="navigate('changelogs')"> Changelogs </a>
+    </button>
+  </div>
+  <div class="links">
+    <a target="_blank" href="https://github.com/Moritz344/lurker">
+      <img src="github-logo.png" width="40" height="40">
+    </a>
   </div>
 </div>
