@@ -7,6 +7,13 @@
   background-color: var(--hero-bg-color);
 }
 
+.desc{
+  color: #D9D9D9;
+  width: 400px;
+  text-align:left;
+  margin-bottom: 10px;
+}
+
 .downloads{
   display: flex;
   margin-bottom: 400px;
