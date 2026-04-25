@@ -10,18 +10,22 @@ import { RouterModule, Router } from '@angular/router';
   styleUrl: './topbar.css',
 })
 export class Topbar {
-
-
-  constructor(private router: Router) { }
-
+  constructor(private router: Router) {}
 
   navigate(route: string) {
-    if (route == "") {
+    if (route == '') {
       this.router.navigate([route]);
       this.scrollToElement('home');
     } else {
       this.router.navigate([route]);
     }
+  }
+
+  navigateToFragment(fragment: string) {
+    this.router.navigate(['']);
+    setTimeout(() => {
+      this.scrollToElement(fragment);
+    }, 50);
   }
 
   scrollToElement(elementId: string) {
@@ -30,5 +34,4 @@ export class Topbar {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }
-
 }

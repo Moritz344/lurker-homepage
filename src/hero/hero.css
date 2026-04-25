@@ -1,20 +1,20 @@
-.container{
+.container {
   position: absolute;
   top: 40px;
-  left:0px;
-  right:0px;
+  left: 0px;
+  right: 0px;
   bottom: 0px;
   background-color: var(--hero-bg-color);
 }
 
-.desc{
-  color: #D9D9D9;
+.desc {
+  color: #d9d9d9;
   width: 400px;
-  text-align:left;
+  text-align: left;
   margin-bottom: 10px;
 }
 
-.downloads{
+.downloads {
   display: flex;
   margin-bottom: 400px;
   flex-direction: column;
@@ -24,11 +24,11 @@
   background-color: var(--bg-color);
 }
 
-.downloads a{
+.downloads a {
   margin-bottom: 300px;
 }
 
-.linux{
+.linux {
   background-color: var(--blue-color);
   border-radius: 10px;
   height: 90px;
@@ -37,39 +37,37 @@
   transition: 0.3s ease;
 }
 
-.lurker-chat{
+.lurker-chat {
   float: right;
   margin-right: 200px;
-  margin-top: -450px;
+  margin-top: -500px;
   transition: 0.3s ease;
 }
 
-.lurker-chat:hover{
+.lurker-chat:hover {
   transform: scale(1.01);
 }
 
-.linux img{
+.linux img {
   float: left;
   margin-top: 20px;
 }
 
-.linux h2{
+.linux h2 {
   color: white;
   font-size: 20px;
   margin-top: 40px;
   font-weight: bold;
-
 }
 
-.linux:hover{
+.linux:hover {
   transform: scale(1.02);
 }
 
-section{
+section {
   background-color: var(--hero-bg-color);
-
 }
-.features{
+.features {
   height: 150vh;
   display: flex;
   flex-direction: column;
@@ -80,48 +78,55 @@ section{
   text-align: center;
 }
 
-.features-box{
+.features-box {
   background-color: var(--grey-color);
   padding: 10px;
-  width: 360px;
-  height: 300px;
-  border-radius: 10px;
+  width: 450px;
+  height: 250px;
+  border-radius: 0px;
+  border: 1px solid #333;
   transition: 0.3s ease;
 }
 
-.features-box:hover{
-  transform: scale(1.02) ;
+.features-box:hover {
+  transform: scale(1.02);
 }
 
-.features-box span{
-  color: rgba(163,163,163);
+.features-box p {
+  color: rgba(163, 163, 163);
   font-size: 25px;
+  text-align: justify;
+  margin: 30px;
+  margin-top: -20px;
 }
 
-.features-box h1{
+.features-box h1 {
+  display: flex;
+  justify-content: left;
+  margin-left: 0px;
   font-size: 30px;
+  margin-bottom: 0px;
+  font-weight: medium;
+  margin: 30px;
 }
 
-.layout{
+.layout {
   display: flex;
   flex-direction: column;
-  text-align:left;
+  text-align: left;
 }
 
-h2{
+h2 {
   color: white;
 }
 
-
-
-.feature-grid{
-  display:grid;
-  grid-template-columns: repeat(3,1fr);
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
 
-
-.hero-text{
+.hero-text {
   display: grid;
   margin-top: 200px;
   justify-content: left;
@@ -129,20 +134,17 @@ h2{
   text-align: center;
 }
 
-
-.preview{
+.preview {
   display: flex;
   justify-content: right;
-
 }
 
-.hero-text h1{
+.hero-text h1 {
   margin-bottom: 0px;
   margin-left: -80px;
 }
 
-.hero-text span{
+.hero-text span {
   color: #949494;
   font-size: 30px;
 }
-
